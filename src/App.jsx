@@ -5,13 +5,12 @@ import {
   Share2, Network, Globe, ChevronDown, FlaskConical, Send, Menu, X, Check, Eye, Target
 } from 'lucide-react';
 
-const Logo = ({ className = "", invert = false }) => (
-  <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg" className={`${className} h-12 w-auto`}>
-    <path d="M20 15C20 10 25 5 35 5C45 5 50 10 50 15C50 25 20 35 20 45C20 50 25 55 35 55C45 55 50 50 50 45" stroke={invert ? "#ffffff" : "#0F3D56"} strokeWidth="4" fill="none" strokeLinecap="round"/>
-    <path d="M25 25C25 20 30 15 35 15C40 15 45 20 45 25C45 35 25 40 25 45" stroke="#D8A84E" strokeWidth="3" fill="none" strokeLinecap="round"/>
-    <text x="65" y="38" fontFamily="Plus Jakarta Sans, sans-serif" fontWeight="800" fontSize="22" fill={invert ? "#ffffff" : "#0F3D56"}>SMRUTI</text>
-    <text x="65" y="52" fontFamily="Plus Jakarta Sans, sans-serif" fontWeight="400" fontSize="12" letterSpacing="2" fill={invert ? "#D8A84E" : "#2B6E73"}>SPINTEX</text>
-  </svg>
+const Logo = ({ className = "" }) => (
+  <img
+    src="/Horizontal%20Logo.svg"
+    alt="Smruti Spintex Pvt. Ltd. — Cotton to Clothes"
+    className={`h-16 w-auto ${className}`}
+  />
 );
 
 const heroSlides = [
@@ -158,7 +157,7 @@ function App() {
     <div className="min-h-screen bg-background text-on-background font-body-md selection:bg-secondary-container selection:text-secondary">
 
       {/* Nav */}
-      <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 md:px-margin-desktop py-4 bg-surface/80 backdrop-blur-xl border-b border-black/5 shadow-sm">
+      <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 md:px-margin-desktop py-2 bg-white border-b border-black/10 shadow-sm">
         <div className="flex items-center gap-3">
           <Logo />
         </div>
@@ -900,7 +899,7 @@ function App() {
       <footer className="bg-primary text-on-primary w-full pt-20 pb-8 px-6 md:px-margin-desktop flex flex-col border-t border-white/10">
         <div className="max-w-[1440px] mx-auto w-full flex flex-col md:flex-row justify-between gap-12 mb-16">
           <div className="max-w-sm">
-            <Logo className="mb-6 brightness-0 invert" invert={true} />
+            <Logo className="mb-6" />
             <p className="text-surface-variant/70 mb-4 font-body-md leading-relaxed text-sm">
               Pioneering the future of the textile industry with sustainable practices and engineering excellence in every thread we spin.
             </p>
