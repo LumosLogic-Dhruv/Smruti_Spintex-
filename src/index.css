@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors from the Stitch design system (Industrial Excellence) */
+  --color-primary: #00273a;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #0f3d56;
+  --color-on-primary-container: #80a8c5;
+  --color-inverse-primary: #a3cbea;
+  --color-primary-fixed: #c8e6ff;
+  --color-primary-fixed-dim: #a3cbea;
+  --color-on-primary-fixed: #001e2e;
+  --color-on-primary-fixed-variant: #214b64;
+
+  --color-secondary: #23686c;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #aaebf0;
+  --color-on-secondary-container: #286c71;
+  --color-secondary-fixed: #adeef3;
+  --color-secondary-fixed-dim: #91d1d7;
+  --color-on-secondary-fixed: #002022;
+  --color-on-secondary-fixed-variant: #004f54;
+
+  --color-tertiary: #322100;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #4d3500;
+  --color-on-tertiary-container: #ca9c43;
+  --color-tertiary-fixed: #ffdea8;
+  --color-tertiary-fixed-dim: #f1bf62;
+  --color-on-tertiary-fixed: #271900;
+  --color-on-tertiary-fixed-variant: #5e4200;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --color-background: #f9f9f7;
+  --color-on-background: #1a1c1b;
+  
+  --color-surface: #f9f9f7;
+  --color-on-surface: #1a1c1b;
+  --color-surface-dim: #dadad8;
+  --color-surface-bright: #f9f9f7;
+  --color-surface-variant: #e2e3e1;
+  --color-on-surface-variant: #42474d;
+  --color-inverse-surface: #2f3130;
+  --color-inverse-on-surface: #f1f1ef;
+  --color-surface-tint: #3b637d;
+
+  --color-surface-container: #eeeeec;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f4f4f2;
+  --color-surface-container-high: #e8e8e6;
+  --color-surface-container-highest: #e2e3e1;
+
+  --color-outline: #72787d;
+  --color-outline-variant: #c2c7cd;
+
+  /* Custom palette anchors */
+  --color-gold-accent: #D8A84E;
+  --color-industrial-blue: #0F3D56;
+
+  /* Typography Fonts */
+  --font-display-lg: 'Plus Jakarta Sans', sans-serif;
+  --font-headline-lg: 'Plus Jakarta Sans', sans-serif;
+  --font-headline-lg-mobile: 'Plus Jakarta Sans', sans-serif;
+  --font-headline-md: 'Plus Jakarta Sans', sans-serif;
+  --font-body-lg: 'Inter', sans-serif;
+  --font-body-md: 'Inter', sans-serif;
+  --font-label-md: 'Inter', sans-serif;
+
+  /* Border Radii */
+  --radius-sm: 0.25rem;
+  --radius-DEFAULT: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-full: 9999px;
+
+  /* Custom Spacing Rules */
+  --spacing-margin-mobile: 20px;
+  --spacing-section-gap: 120px;
+  --spacing-margin-desktop: 80px;
+  --spacing-gutter: 24px;
+  --spacing-base: 8px;
+}
+
+@utility glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@utility glass-dark {
+  background: rgba(15, 61, 86, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
