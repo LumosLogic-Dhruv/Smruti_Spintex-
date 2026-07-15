@@ -116,10 +116,10 @@ export default function ContactPage() {
 
         {/* Info Cards */}
         <div className="lg:col-span-5 space-y-gutter">
-          <div ref={reveal} className="bg-primary-container text-on-primary-container p-8 border border-outline-variant rounded-xl card-ambient-shadow opacity-0 translate-y-8 duration-700">
+          <div ref={reveal} className="bg-primary-container text-white p-8 border border-outline-variant rounded-xl card-ambient-shadow opacity-0 translate-y-8 duration-700">
             <div className="flex items-start space-x-4">
-              <div className="bg-on-primary-container/10 p-3 rounded-lg">
-                <span className="material-symbols-outlined text-on-primary-container">factory</span>
+              <div className="bg-white/10 p-3 rounded-lg">
+                <span className="material-symbols-outlined text-white">factory</span>
               </div>
               <div>
                 <h3 className="font-headline-md text-headline-md mb-2">Registered Plant</h3>
@@ -179,26 +179,17 @@ export default function ContactPage() {
 
       {/* Map */}
       <section className="mt-gutter mb-16">
-        <div className="relative w-full h-[450px] bg-surface-container rounded-xl overflow-hidden border border-outline-variant card-ambient-shadow">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center z-10 px-6">
-              <span className="material-symbols-outlined text-primary text-[48px] mb-4 block">location_on</span>
-              <h4 className="font-headline-md text-headline-md text-primary mb-2">Find Us in Dhrangadhra, Gujarat</h4>
-              <p className="font-body-md text-on-surface-variant mb-6">Our state-of-the-art spinning facility in Gujarat's premium cotton belt.</p>
-              <a
-                href="https://maps.google.com/?q=Dhrangadhra,+Surendranagar,+Gujarat,+India"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-primary text-on-primary px-8 py-3 rounded-lg font-label-sm text-label-sm hover:bg-secondary transition-colors inline-block"
-              >
-                OPEN IN GOOGLE MAPS
-              </a>
-            </div>
-            <div
-              className="absolute inset-0 opacity-40 bg-cover bg-center grayscale contrast-125"
-              style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBDjmwTKvfhpn_LGn-N9RTql37FCZYKPyF4wtjizzNVEz3IZd7v5k7hfPI1sOOdQBIJVzOZOGTNlWhJL8NtvYmzdC0fWRB0eyjR8ZbonWBSl9TtjYveKw1fI62r2wuIyz25r-x4ZMZxwF0FdfE1wE2qoYEVstqMxPu__TBO6OgOWwATZe3YSic8Xf_UCtCWUQ8prESzJwIlgvoO0bPscjws9VneUbR_9fsLL6INqvLdhu2UmDcg')" }}
-            />
-          </div>
+        <div className="w-full rounded-xl overflow-hidden border border-outline-variant card-ambient-shadow">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.0151318021626!2d71.45088311100231!3d23.023216616217088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395963c049b26905%3A0x1e71283d56169f49!2sSMRUTI%20SPINTEX.%20PVT.LTD.!5e0!3m2!1sen!2sin!4v1784107466385!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="strict-origin-when-cross-origin"
+            title="Smruti Spintex Location"
+          />
         </div>
       </section>
     </main>

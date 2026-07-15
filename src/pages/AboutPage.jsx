@@ -121,16 +121,16 @@ export default function AboutPage() {
       {/* Vision & Mission */}
       <section className="py-24 px-4 md:px-margin-desktop bg-surface-container-highest">
         <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <div className="bg-primary-container p-8 md:p-12 rounded-2xl text-on-primary-container relative overflow-hidden group" ref={reveal}>
-            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-              <span className="material-symbols-outlined text-[120px]">visibility</span>
+          <div className="bg-white p-8 md:p-12 rounded-2xl border border-outline-variant card-ambient-shadow relative overflow-hidden group" ref={reveal}>
+            <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+              <span className="material-symbols-outlined text-[120px] text-primary">visibility</span>
             </div>
             <div className="relative z-10">
-              <div className="w-16 h-16 bg-on-primary-container/20 rounded-xl flex items-center justify-center mb-8">
-                <span className="material-symbols-outlined text-on-primary-container text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>visibility</span>
+              <div className="w-16 h-16 bg-primary-container/20 rounded-xl flex items-center justify-center mb-8">
+                <span className="material-symbols-outlined text-primary text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>visibility</span>
               </div>
-              <h2 className="font-headline-lg text-headline-lg mb-6">Our Vision</h2>
-              <p className="font-body-lg text-body-lg opacity-90 leading-relaxed">
+              <h2 className="font-headline-lg text-headline-lg text-primary mb-6">Our Vision</h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
                 To be a globally recognized benchmark in textile spinning, delivering premium-grade yarn through sustainable and innovative manufacturing practices.
               </p>
             </div>

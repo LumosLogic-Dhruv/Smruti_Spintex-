@@ -7,8 +7,13 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-4 md:px-margin-desktop py-16 max-w-container-max mx-auto">
         {/* Brand */}
         <div className="space-y-6">
-          <div className="font-headline-md text-headline-md font-bold text-white uppercase tracking-tight">
-            Smruti Spintex Pvt Ltd
+          <div>
+            <img
+              src="/Horizontal%20Logo.svg"
+              alt="Smruti Spintex Pvt Ltd"
+              className="h-14 w-auto"
+              style={{ filter: 'brightness(0) invert(1)' }}
+            />
           </div>
           <p className="font-body-md text-body-md opacity-80 max-w-xs leading-relaxed">
             Pioneering precision spinning in Gujarat. Committed to engineering excellence from cotton to clothes.
