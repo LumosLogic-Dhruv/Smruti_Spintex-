@@ -45,7 +45,7 @@ const products = [
   {
     title: 'Compact Yarn (K-Compact)',
     tag: 'Premium',
-    tagColor: 'bg-tertiary-fixed text-on-tertiary-fixed',
+    tagColor: 'bg-primary text-on-primary',
     count: '30s – 60s',
     process: 'K-Compact',
     tensile: 'Very High',
