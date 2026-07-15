@@ -29,7 +29,7 @@ const products = [
     tensile: 'High',
     hairiness: 'Low',
     desc: 'Superior quality yarn with short fibers removed for extra smoothness, strength, and luster. Ideal for premium apparel, shirting, and hosiery.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuApIDGVQXyEbbzRtn7WTmnYbxZh-EnCb3QlvYpgStE4Cyml2BFFyflq1w2d5W_NjkcPRszUc_3nuysCiUjB4ZhISYAMBMJGA_wejBtv1yMy2zwh91I0O_wBC4dLmaTj_0Hsld9eOOGXEQw3CMlS_EYP1c9ntpCe4pTjNMe7MbicpQOtYCPDBwosUGgt7U_Kl8mtAju4TwtniPdFaphOVWOBtKLHwQCbvKblTDrq8Yp4crYNHONivi1v',
+    img: '/15.webp',
   },
   {
     title: 'Carded Cotton Yarn',
@@ -40,7 +40,7 @@ const products = [
     tensile: 'Medium-High',
     hairiness: 'Standard',
     desc: 'High-performance yarn suitable for a wide range of weaving and knitting applications requiring durability and comfort.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuARAqW21TjWZBZRZGLntnNis1MV7x8Y8T4Cs_AQCb6bcIBrTAozCP0f6OBaByLwiXOv343dpZ5mNhm7r57FDNiUDeE3OpQnqpVj7cfiX-orFUkXfuztx-7aMxTubCDveIvfOfnAKUXkokX-Lz9W4bX9I31Tmksrwjj66QlO1sE-WI8NokxnbmRFQgBunvWYiM44AA9jTW70PwwMoqSM80iONJ0bNwHTWV2uWptJ8HryChLKtVv_bCkJ',
+    img: '/16.webp',
   },
   {
     title: 'Compact Yarn (K-Compact)',
@@ -51,7 +51,7 @@ const products = [
     tensile: 'Very High',
     hairiness: 'Ultra Low',
     desc: 'Premium compact technology for ultra-low yarn hairiness and maximum tensile strength. Ideal for luxury woven fabrics.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCCgm4r7KvZh1ku3oysQZZuwT2etYeKL2X-9jHyyIuj6utrEmHCoaYFY9JfHUaJewHEB5zKHhDQh8aY62Kg2_j2D66W0R05R_CoJiWc9-WaLY0sSIs2e-zNTFbp2sebOwQC2n0toWS5S5DgIWaUEHaWIUxb3xdjoOqlsFe0O47_1-9P16Z3_wEq8_uwTdqLeVZXte0hZk1C-dYivwawnIWxdZU9NjGDuhGdpQaphcy24owMaC2SbQA0',
+    img: '/17.webp',
   },
   {
     title: 'Organic Combed Cotton',
@@ -62,7 +62,7 @@ const products = [
     tensile: 'High',
     hairiness: 'Low',
     desc: 'GOTS-certified organic yarn for eco-conscious brands. Same premium quality without compromise on sustainability.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD7Pi8roH8CQwZNo3mpIjJByXeXQEyfNbnx61if_-NkmkL4OHnDXYJyK0zW5pbbjEJ06XVUoPBzapN4qrlIiu6HGc9giL4GaTrJtfYZTSU97p0NynroVbORZZv4pXsuU0mk46IfVzJTNtE0nFOATWcygRr3fDspHkCNGXiXTGVd9VIouN-MIoqFt05dz8oeCLbVEdooYT6hPlALUkg_iIeY6PWkHpfiE8q0tnWF26ohMt1OPj1W0J92',
+    img: '/18.webp',
   },
 ];
 
@@ -73,11 +73,11 @@ export default function ProductsPage() {
   return (
     <main className="pt-20">
       {/* Hero */}
-      <section className="relative py-24 px-4 md:px-margin-desktop bg-primary-container overflow-hidden">
-        <div className="max-w-container-max mx-auto relative z-10 text-on-primary-container" ref={reveal}>
+      <section className="relative py-24 bg-primary-container overflow-hidden">
+        <div className="relative px-4 md:px-margin-desktop max-w-container-max mx-auto text-center" ref={reveal}>
           <span className="inline-block px-4 py-1 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded-full mb-6">PRODUCT CATALOGUE</span>
-          <h1 className="font-display-lg text-display-lg mb-6 max-w-3xl">Premium Cotton Yarn for Every Application</h1>
-          <p className="font-body-lg text-body-lg opacity-90 max-w-2xl">
+          <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-primary mb-6">Premium Cotton Yarn for Every Application</h1>
+          <p className="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto opacity-90">
             Engineered for diverse textile applications from high-fashion apparel to industrial fabrics. Every count, every process — precisely controlled.
           </p>
         </div>
@@ -122,9 +122,9 @@ export default function ProductsPage() {
 
       {/* CTA */}
       <section className="py-24 px-4 md:px-margin-desktop bg-surface-container">
-        <div className="max-w-container-max mx-auto bg-primary text-on-primary p-16 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-12">
+        <div className="max-w-container-max mx-auto bg-primary text-on-primary p-8 md:p-16 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
           <div className="max-w-xl">
-            <h2 className="font-display-lg text-display-lg mb-6">Need a Custom Specification?</h2>
+            <h2 className="font-display-lg text-headline-lg-mobile md:text-display-lg mb-4 md:mb-6">Need a Custom Specification?</h2>
             <p className="font-body-lg text-body-lg opacity-80">
               Our technical team can engineer yarn to your exact count, twist, and hairiness requirements. Contact us for a detailed quotation.
             </p>

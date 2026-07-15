@@ -43,7 +43,7 @@ export default function QualityPage() {
       <section className="relative py-24 bg-primary-container overflow-hidden">
         <div className="relative px-4 md:px-margin-desktop max-w-container-max mx-auto text-center" ref={reveal}>
           <span className="inline-block px-4 py-1 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded-full mb-6">UNCOMPROMISING STANDARDS</span>
-          <h1 className="font-display-lg text-display-lg text-on-primary mb-6">Engineering Precision in Every Thread</h1>
+          <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-primary mb-6">Engineering Precision in Every Thread</h1>
           <p className="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto opacity-90">
             At Smruti Spintex, quality isn't just a department — it's the core of our manufacturing DNA. We utilize state-of-the-art online monitoring systems to ensure global consistency.
           </p>
@@ -80,13 +80,13 @@ export default function QualityPage() {
               <div
                 key={i}
                 ref={reveal}
-                className="relative flex gap-8 pb-12 group opacity-0 translate-y-8 duration-700"
+                className="relative flex gap-4 md:gap-8 pb-12 group opacity-0 translate-y-8 duration-700"
                 style={{ transitionDelay: `${i * 100}ms` }}
               >
-                <div className="z-10 w-20 h-20 flex-shrink-0 flex items-center justify-center rounded-full bg-white border-2 border-secondary text-secondary card-ambient-shadow transition-transform group-hover:scale-110">
+                <div className="z-10 w-12 h-12 md:w-20 md:h-20 flex-shrink-0 flex items-center justify-center rounded-full bg-white border-2 border-secondary text-secondary card-ambient-shadow transition-transform group-hover:scale-110">
                   <span className="material-symbols-outlined text-3xl">{step.icon}</span>
                 </div>
-                <div className="bg-white p-8 rounded-xl card-ambient-shadow border border-outline-variant flex-grow">
+                <div className="bg-white p-5 md:p-8 rounded-xl card-ambient-shadow border border-outline-variant flex-grow">
                   <div className="flex justify-between items-start mb-4 flex-wrap gap-2">
                     <h4 className="font-headline-md text-headline-md text-primary">{step.num}. {step.title}</h4>
                     <span className="text-secondary font-bold text-sm">{step.metric}</span>
@@ -127,9 +127,9 @@ export default function QualityPage() {
 
       {/* CTA */}
       <section className="py-24 px-4 md:px-margin-desktop max-w-container-max mx-auto">
-        <div className="bg-primary text-on-primary p-16 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-12" ref={reveal}>
+        <div className="bg-primary text-on-primary p-8 md:p-16 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12" ref={reveal}>
           <div className="max-w-xl">
-            <h2 className="font-display-lg text-display-lg mb-6">Excellence is not an act, but a habit.</h2>
+            <h2 className="font-display-lg text-headline-lg-mobile md:text-display-lg mb-4 md:mb-6">Excellence is not an act, but a habit.</h2>
             <p className="font-body-lg text-body-lg opacity-80">Experience the difference of industrial precision. Connect with our quality team for detailed technical reports or customized spinning requests.</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-6">

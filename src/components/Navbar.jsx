@@ -29,8 +29,8 @@ export default function Navbar() {
     >
       <nav className="flex items-center justify-between px-4 md:px-margin-desktop max-w-container-max mx-auto h-full">
         {/* Logo */}
-        <NavLink to="/" className="font-headline-md text-headline-md font-bold text-primary uppercase tracking-tight leading-tight">
-          Smruti Spintex Pvt Ltd
+        <NavLink to="/" className="flex items-center">
+          <img src="/Horizontal%20Logo.svg" alt="Smruti Spintex Pvt Ltd" className="h-16 w-auto -my-2" />
         </NavLink>
 
         {/* Desktop Links */}

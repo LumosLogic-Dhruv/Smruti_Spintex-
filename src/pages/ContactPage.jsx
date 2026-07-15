@@ -36,7 +36,7 @@ export default function ContactPage() {
     <main className="pt-32 pb-0 px-4 md:px-margin-desktop max-w-container-max mx-auto">
       {/* Hero */}
       <section className="mb-16" ref={reveal}>
-        <h1 className="font-display-lg text-display-lg text-primary mb-4 md:mb-6">Get in touch with our experts.</h1>
+        <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-4 md:mb-6">Get in touch with our experts.</h1>
         <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
           Whether you have technical queries about our spinning processes or need a global supply quote, our team is ready to provide precise solutions for your textile requirements.
         </p>

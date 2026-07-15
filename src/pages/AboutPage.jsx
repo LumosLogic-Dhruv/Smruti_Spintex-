@@ -44,7 +44,7 @@ export default function AboutPage() {
         <div className="max-w-container-max mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
           <div className="space-y-8" ref={reveal}>
             <span className="text-secondary font-label-sm text-label-sm tracking-widest uppercase">Global Textile Excellence</span>
-            <h1 className="font-display-lg text-display-lg text-primary max-w-xl">
+            <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary max-w-xl">
               A modern spinning mill built on technology, precision, and trust.
             </h1>
             <p className="text-on-surface-variant font-body-lg text-body-lg max-w-lg">
@@ -58,8 +58,8 @@ export default function AboutPage() {
           <div className="relative" ref={reveal}>
             <div className="rounded-xl overflow-hidden card-ambient-shadow border border-outline-variant">
               <img
-                className="w-full h-[500px] object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_sv-eP_ec-4ezU0G_-MW87fJSOmgfj0AweK-x0qmeRAddwKn7GAIr4xczD25ARKW13-ZIjszfestpFgYWx--so-yTRmCEIzZfcso7kkX0Zo0Is8XW1g4U53X55FNvKV4OblT0uoDClNxWnxtHHAjklYmb5L1KHNwCxnHlZ9NVlNeb5CtRbMgzdFx3tKnlSQzNUDgXMhADlsWtFEvfS_JRYDpx7famXCNWJN0MqcfNCAWxIWklfprDHg"
+                className="w-full h-64 md:h-[500px] object-cover"
+                src="/9.webp"
                 alt="Smruti Spintex spinning mill"
               />
             </div>
@@ -121,7 +121,7 @@ export default function AboutPage() {
       {/* Vision & Mission */}
       <section className="py-24 px-4 md:px-margin-desktop bg-surface-container-highest">
         <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <div className="bg-primary-container p-12 rounded-2xl text-on-primary-container relative overflow-hidden group" ref={reveal}>
+          <div className="bg-primary-container p-8 md:p-12 rounded-2xl text-on-primary-container relative overflow-hidden group" ref={reveal}>
             <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
               <span className="material-symbols-outlined text-[120px]">visibility</span>
             </div>
@@ -135,7 +135,7 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-          <div className="bg-white p-12 rounded-2xl border border-outline-variant card-ambient-shadow relative overflow-hidden group" ref={reveal}>
+          <div className="bg-white p-8 md:p-12 rounded-2xl border border-outline-variant card-ambient-shadow relative overflow-hidden group" ref={reveal}>
             <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
               <span className="material-symbols-outlined text-[120px] text-primary">rocket_launch</span>
             </div>

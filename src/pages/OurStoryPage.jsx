@@ -24,21 +24,21 @@ const milestones = [
     year: '2021',
     title: 'The Genesis',
     desc: 'Inauguration of Smruti Spintex Private Limited in Dhrangadhra, Gujarat, with a commitment to quality and timely delivery.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCq8CJQ7_dEoLxQatS6wCqoB3osPDjKpSyFkxxL5p4kx2x5EDt2N62egRbqnb9nFILs3C5GfyPFqPJLEuvWR7WdpPLDdUA6FP8VxgDGOhIUt7Zrx4qUcwrqap1ZRdygWsNAmMdXjFA4CAknRBmQ52QWxh-1UHveIlzthYLxNBDmSK4ydo-fV8hbFbm9KrkzNPiF8acwGZ2CSNJULerla0G5Tf8ohbtOjFb2DZKksBkXrUNF6x2pFffZvA',
+    img: '/12.webp',
     reverse: false,
   },
   {
     year: '2022',
     title: 'Plant Commissioning',
     desc: 'Installation of high-end European Rieter K 48 spinning lines and full-scale production commencement with 16,416 active spindles.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD-eIjW9C2LASRfeUajA2ub7wLgXZHzXRN-3ItQp0YpmCiH8xT5DGHH1wkFJaaxWxQa-Vwe09tP4lDwHjeXDhybGWXA70-5LeGo3kg90Y7Nzck1lzTVo0BKFzgPZZN1gHOE52FCuN6v7ZUX8MTgSqwi275AwtqdI_NSe_5SXaL3c_1unSskKKSUYYB9UF3yUM95iSdY0h601So1V7gj6RNWoD67WyGkvWaO2yxXjaDBNCkbi3McNNNf7g',
+    img: '/13.webp',
     reverse: true,
   },
   {
     year: '2026',
     title: 'Global Horizon',
     desc: 'Transitioning into a fully automated digital manufacturing ecosystem, delivering world-class yarn to international markets.',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBiLmUeoexsinNs5H1XNY1cCQf3F1P81dt5jDO_6UI6Na6PNv0UEtRIFwELxjABs5Sr0VELMI1hUHWNh4YXYb_hj7CHxXfexZwxn3DY6cvBxHvdrHeXnzBpU3F_b2yS3w57uvBdhpcxi29pzX-xzR1J9SyN7tIRppMmZQxsm4Rfuv494BTFDHfGSDokoI_ER-jFjaB2BqLuVMYhoA-w',
+    img: '/14.webp',
     reverse: false,
   },
 ];
@@ -54,7 +54,7 @@ export default function OurStoryPage() {
         <div className="max-w-container-max mx-auto relative z-10 grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
           <div className="space-y-6" ref={reveal}>
             <span className="inline-block px-4 py-1.5 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm rounded-full">ESTABLISHED 2021</span>
-            <h1 className="font-display-lg text-display-lg text-primary leading-tight">
+            <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary leading-tight">
               Crafting the Future of <span className="text-secondary">Textile Engineering</span>
             </h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
@@ -65,7 +65,7 @@ export default function OurStoryPage() {
             <div className="absolute -inset-4 bg-primary-container/10 blur-2xl rounded-full transition-transform group-hover:scale-110"></div>
             <img
               className="relative z-10 w-full aspect-square object-cover rounded-xl shadow-lg border border-outline-variant/30"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuApdUzPVtlKqkcVI8WqjFlGhP7glumVsLvsxNkyN6bHdc-kObytiWSNnMvbNEm39YRsejNwDjXy2mR976YZ9ZCSqFYlRxb01oMZL7TbjpiUlzVPWJ0FmWfOmyezBxEeJeXW21-t5chYc6smb3I0RVqB2zYv9NIY1JxeMPl5ds4KTvkPngXyOXgoaOZBoDWY81xheSfldSexc7lZ33Zd-JkBpuScnptTpGZPoIWt7tWzYNzDV11OyMpJkw"
+              src="/10.webp"
               alt="Smruti Spintex manufacturing"
             />
           </div>
@@ -75,7 +75,7 @@ export default function OurStoryPage() {
       {/* Story Bento */}
       <section className="py-16 px-4 md:px-margin-desktop max-w-container-max mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-          <div className="md:col-span-2 glass-card p-12 rounded-xl flex flex-col justify-center gap-6" ref={reveal}>
+          <div className="md:col-span-2 glass-card p-8 md:p-12 rounded-xl flex flex-col justify-center gap-6" ref={reveal}>
             <h2 className="font-headline-lg text-headline-lg text-primary">From Cotton to Clothes</h2>
             <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
               Smruti Spintex Pvt. Ltd. was founded with a singular vision: to redefine the quality standards of the Indian spinning industry. What started as a passion for textiles in 2021 has evolved into a powerhouse of innovation. We don't just spin yarn; we weave trust into every thread, ensuring our global clientele receives nothing short of perfection.
@@ -85,11 +85,11 @@ export default function OurStoryPage() {
             </p>
             <div className="grid grid-cols-2 gap-gutter pt-8 border-t border-outline-variant">
               <div>
-                <p className="font-display-lg text-display-lg text-secondary">16,416</p>
+                <p className="font-display-lg text-headline-lg md:text-display-lg text-secondary">16,416</p>
                 <p className="font-label-sm text-label-sm text-on-surface-variant">ACTIVE SPINDLES</p>
               </div>
               <div>
-                <p className="font-display-lg text-display-lg text-secondary">Global</p>
+                <p className="font-display-lg text-headline-lg md:text-display-lg text-secondary">Global</p>
                 <p className="font-label-sm text-label-sm text-on-surface-variant">SUPPLY NETWORK</p>
               </div>
             </div>
@@ -98,7 +98,7 @@ export default function OurStoryPage() {
             <div className="h-48 rounded-xl overflow-hidden shadow-sm border border-outline-variant">
               <img
                 className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXs5A7bhN_Oh1uVHTpngWJRn_S7I8WXetA9Rbnm9leYn7XWfLXVAi0IhtkNzxKbCBT3DIoFilvmzXtdad8aezJyWEO1FpaGxlBMtxXt1Jh7YvuI3Tmr0xbjdtUuR820boGkVHaNck1r__ZtqRzQnrKPCuo-K402O2D8HOdB6W_gmJHz-tjf7nQqVEXi-16gCB4Cb3IVcKzNMqZCxgryphKxLqRh1SmJk4QMEIw_Z6K5iLmJXpjrL6EVA"
+                src="/11.webp"
                 alt="Cotton yarn detail"
               />
             </div>
@@ -148,9 +148,9 @@ export default function OurStoryPage() {
       {/* CTA */}
       <section className="py-16 px-4 md:px-margin-desktop">
         <div className="max-w-container-max mx-auto">
-          <div className="mx-0 md:mx-0 bg-primary-container rounded-3xl p-16 text-center text-on-primary relative overflow-hidden" ref={reveal}>
+          <div className="mx-0 md:mx-0 bg-primary-container rounded-3xl p-8 md:p-16 text-center text-on-primary relative overflow-hidden" ref={reveal}>
             <div className="relative z-10 space-y-8">
-              <h2 className="font-display-lg text-display-lg">Ready to weave growth stories together?</h2>
+              <h2 className="font-display-lg text-headline-lg-mobile md:text-display-lg">Ready to weave growth stories together?</h2>
               <p className="font-body-lg text-body-lg opacity-80 max-w-2xl mx-auto">Join the ranks of global brands who trust Smruti Spintex for their premium yarn requirements.</p>
               <div className="flex flex-wrap justify-center gap-4">
                 <button onClick={() => navigate('/contact')} className="bg-tertiary-fixed text-on-tertiary-fixed px-8 py-4 rounded font-bold hover:scale-105 transition-transform">Get a Technical Quote</button>
