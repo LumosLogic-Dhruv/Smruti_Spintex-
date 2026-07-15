@@ -286,9 +286,9 @@ export default function HomePage() {
             </div>
             <div className="bg-surface-container p-10 rounded-xl border border-outline-variant" ref={reveal}>
               <h3 className="font-headline-md text-headline-md text-primary mb-8">Certified Excellence</h3>
-              <div className="flex flex-wrap gap-8 opacity-70 hover:opacity-100 transition-all">
+              <div className="flex flex-wrap gap-8">
                 {['ISO 9001', 'OEKO-TEX', 'BCI', 'GOTS'].map(cert => (
-                  <div key={cert} className="w-20 h-20 bg-primary-container text-on-primary-container rounded flex items-center justify-center font-bold text-xs text-center p-2">
+                  <div key={cert} className="w-20 h-20 bg-primary text-on-primary rounded flex items-center justify-center font-bold text-xs text-center p-2">
                     {cert}
                   </div>
                 ))}

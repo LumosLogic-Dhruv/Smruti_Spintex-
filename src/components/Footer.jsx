@@ -43,7 +43,7 @@ export default function Footer() {
               { label: 'Our Story', to: '/our-story' },
             ].map(({ label, to }) => (
               <li key={to}>
-                <Link to={to} className="hover:text-tertiary-fixed transition-colors">{label}</Link>
+                <Link to={to} className="hover:text-white transition-colors">{label}</Link>
               </li>
             ))}
           </ul>
@@ -54,17 +54,17 @@ export default function Footer() {
           <h4 className="font-body-lg font-bold text-white mb-6">Contact Us</h4>
           <div className="space-y-4 font-body-md text-body-md text-white/80">
             <div className="flex items-start gap-3">
-              <span className="material-symbols-outlined text-tertiary-fixed shrink-0 text-[20px]">location_on</span>
+              <span className="material-symbols-outlined text-white shrink-0 text-[20px]">location_on</span>
               <span>LS No 1279/P2/P2, 1280, 1557/P217, 1557/P218, Near Kuda Road, Opposite Bala Hanuman, Dhrangadhra, Surendranagar District, Gujarat, India — 363310</span>
             </div>
             <div className="flex items-center gap-3">
-              <span className="material-symbols-outlined text-tertiary-fixed shrink-0 text-[20px]">mail</span>
-              <a href="mailto:ptpatel.smrutispintex@gmail.com" className="hover:text-tertiary-fixed transition-colors">
+              <span className="material-symbols-outlined text-white shrink-0 text-[20px]">mail</span>
+              <a href="mailto:ptpatel.smrutispintex@gmail.com" className="hover:text-white transition-colors">
                 ptpatel.smrutispintex@gmail.com
               </a>
             </div>
             <div className="flex items-center gap-3">
-              <span className="material-symbols-outlined text-tertiary-fixed shrink-0 text-[20px]">schedule</span>
+              <span className="material-symbols-outlined text-white shrink-0 text-[20px]">schedule</span>
               <span>Mon – Sat: 09:00 AM – 06:00 PM IST</span>
             </div>
           </div>

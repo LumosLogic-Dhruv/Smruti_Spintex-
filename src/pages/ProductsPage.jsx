@@ -75,7 +75,7 @@ export default function ProductsPage() {
       {/* Hero */}
       <section className="relative py-24 bg-primary-container overflow-hidden">
         <div className="relative px-4 md:px-margin-desktop max-w-container-max mx-auto text-center" ref={reveal}>
-          <span className="inline-block px-4 py-1 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded-full mb-6">PRODUCT CATALOGUE</span>
+          <span className="inline-block px-4 py-1 bg-white text-primary font-label-sm text-label-sm rounded-full mb-6">PRODUCT CATALOGUE</span>
           <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-primary mb-6">Premium Cotton Yarn for Every Application</h1>
           <p className="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto opacity-90">
             Engineered for diverse textile applications from high-fashion apparel to industrial fabrics. Every count, every process — precisely controlled.

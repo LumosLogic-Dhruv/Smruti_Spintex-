@@ -55,7 +55,7 @@ export default function OurStoryPage() {
           <div className="space-y-6" ref={reveal}>
             <span className="inline-block px-4 py-1.5 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm rounded-full">ESTABLISHED 2021</span>
             <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary leading-tight">
-              Crafting the Future of <span className="text-secondary">Textile Engineering</span>
+              Crafting the Future of <span className="text-primary">Textile Engineering</span>
             </h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
               At Smruti Spintex, we translate raw nature into industrial excellence. Our journey is one of relentless precision, where traditional cotton heritage meets avant-garde spinning technology.
@@ -85,11 +85,11 @@ export default function OurStoryPage() {
             </p>
             <div className="grid grid-cols-2 gap-gutter pt-8 border-t border-outline-variant">
               <div>
-                <p className="font-display-lg text-headline-lg md:text-display-lg text-secondary">16,416</p>
+                <p className="font-display-lg text-headline-lg md:text-display-lg text-primary">16,416</p>
                 <p className="font-label-sm text-label-sm text-on-surface-variant">ACTIVE SPINDLES</p>
               </div>
               <div>
-                <p className="font-display-lg text-headline-lg md:text-display-lg text-secondary">Global</p>
+                <p className="font-display-lg text-headline-lg md:text-display-lg text-primary">Global</p>
                 <p className="font-label-sm text-label-sm text-on-surface-variant">SUPPLY NETWORK</p>
               </div>
             </div>
