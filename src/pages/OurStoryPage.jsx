@@ -53,7 +53,7 @@ export default function OurStoryPage() {
       <section className="relative py-24 px-4 md:px-margin-desktop overflow-hidden">
         <div className="max-w-container-max mx-auto relative z-10 grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
           <div className="space-y-6" ref={reveal}>
-            <span className="inline-block px-4 py-1.5 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm rounded-full">ESTABLISHED 2021</span>
+            <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary font-label-sm text-label-sm rounded-full">ESTABLISHED 2021</span>
             <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary leading-tight">
               Crafting the Future of <span className="text-primary">Textile Engineering</span>
             </h1>
@@ -102,7 +102,7 @@ export default function OurStoryPage() {
                 alt="Cotton yarn detail"
               />
             </div>
-            <div className="flex-1 bg-primary-container p-8 rounded-xl flex flex-col justify-end text-on-primary">
+            <div className="flex-1 bg-primary p-8 rounded-xl flex flex-col justify-end text-white">
               <span className="material-symbols-outlined text-4xl mb-4">precision_manufacturing</span>
               <h3 className="font-headline-md text-headline-md mb-2">Technological Core</h3>
               <p className="font-body-md text-body-md opacity-80">Helmed by industry professionals with deep technical proficiency in textile engineering.</p>
@@ -148,13 +148,13 @@ export default function OurStoryPage() {
       {/* CTA */}
       <section className="py-16 px-4 md:px-margin-desktop">
         <div className="max-w-container-max mx-auto">
-          <div className="mx-0 md:mx-0 bg-primary-container rounded-3xl p-8 md:p-16 text-center text-on-primary relative overflow-hidden" ref={reveal}>
+          <div className="mx-0 md:mx-0 bg-primary rounded-3xl p-8 md:p-16 text-center text-white relative overflow-hidden" ref={reveal}>
             <div className="relative z-10 space-y-8">
               <h2 className="font-display-lg text-headline-lg-mobile md:text-display-lg">Ready to weave growth stories together?</h2>
               <p className="font-body-lg text-body-lg opacity-80 max-w-2xl mx-auto">Join the ranks of global brands who trust Smruti Spintex for their premium yarn requirements.</p>
               <div className="flex flex-wrap justify-center gap-4">
-                <button onClick={() => navigate('/contact')} className="bg-white text-primary px-8 py-4 rounded font-label-sm text-label-sm hover:bg-surface-container transition-colors">Get a Technical Quote</button>
-                <button onClick={() => navigate('/about')} className="border-2 border-white text-white px-8 py-4 rounded font-label-sm text-label-sm hover:bg-white/10 transition-colors">Learn About Us</button>
+                <button onClick={() => navigate('/contact')} className="ripple-btn btn-fill btn-fill-primary px-8 py-4 rounded font-label-sm text-label-sm border border-white">Get a Technical Quote</button>
+                <button onClick={() => navigate('/about')} className="ripple-btn btn-fill btn-fill-outline-white border-2 border-white px-8 py-4 rounded font-label-sm text-label-sm">Learn About Us</button>
               </div>
             </div>
           </div>

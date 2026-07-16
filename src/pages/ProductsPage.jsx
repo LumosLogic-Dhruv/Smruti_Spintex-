@@ -73,11 +73,11 @@ export default function ProductsPage() {
   return (
     <main className="pt-20">
       {/* Hero */}
-      <section className="relative py-24 bg-primary-container overflow-hidden">
+      <section className="relative py-24 bg-primary overflow-hidden">
         <div className="relative px-4 md:px-margin-desktop max-w-container-max mx-auto text-center" ref={reveal}>
           <span className="inline-block px-4 py-1 bg-white text-primary font-label-sm text-label-sm rounded-full mb-6">PRODUCT CATALOGUE</span>
-          <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-primary mb-6">Premium Cotton Yarn for Every Application</h1>
-          <p className="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto opacity-90">
+          <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-white mb-6">Premium Cotton Yarn for Every Application</h1>
+          <p className="font-body-lg text-body-lg text-white/75 max-w-2xl mx-auto">
             Engineered for diverse textile applications from high-fashion apparel to industrial fabrics. Every count, every process — precisely controlled.
           </p>
         </div>
@@ -130,8 +130,8 @@ export default function ProductsPage() {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-6">
-            <button onClick={() => navigate('/contact')} className="bg-white text-primary px-10 py-4 rounded-lg font-label-sm text-label-sm hover:bg-surface-container transition-all">Get a Quote</button>
-            <button onClick={() => navigate('/quality')} className="border-2 border-white text-white px-10 py-4 rounded-lg font-label-sm text-label-sm hover:bg-white/10 transition-all">View Quality</button>
+            <button onClick={() => navigate('/contact')} className="ripple-btn btn-fill btn-fill-primary px-10 py-4 rounded-lg font-label-sm text-label-sm border border-white">Get a Quote</button>
+            <button onClick={() => navigate('/quality')} className="ripple-btn btn-fill btn-fill-outline-white border-2 border-white px-10 py-4 rounded-lg font-label-sm text-label-sm">View Quality</button>
           </div>
         </div>
       </section>

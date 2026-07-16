@@ -16,6 +16,24 @@ function ScrollToTop() {
 }
 
 function Layout() {
+  React.useEffect(() => {
+    const handleRipple = (e) => {
+      const btn = e.target.closest('.ripple-btn');
+      if (!btn) return;
+      const rect = btn.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      const wave = document.createElement('span');
+      wave.className = 'ripple-wave';
+      wave.style.width = wave.style.height = `${size}px`;
+      wave.style.left = `${e.clientX - rect.left}px`;
+      wave.style.top = `${e.clientY - rect.top}px`;
+      btn.appendChild(wave);
+      wave.addEventListener('animationend', () => wave.remove());
+    };
+    document.addEventListener('click', handleRipple);
+    return () => document.removeEventListener('click', handleRipple);
+  }, []);
+
   return (
     <div className="min-h-screen bg-surface text-on-surface font-body-md overflow-x-hidden">
       <Navbar />

@@ -98,7 +98,7 @@ export default function HomePage() {
           <div className="absolute inset-0 hero-gradient" />
         </div>
         <div className="relative z-10 px-4 md:px-margin-desktop py-24 md:py-0 md:h-full flex flex-col justify-center max-w-container-max mx-auto text-on-primary">
-          <span className="font-label-sm text-label-sm uppercase tracking-[0.3em] mb-4 text-secondary-fixed">Global Engineering Standards</span>
+          <span className="font-label-sm text-label-sm uppercase tracking-[0.3em] mb-4 text-white/60">Global Engineering Standards</span>
           <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg max-w-3xl mb-6 leading-tight">
             Advanced Textile Manufacturing: From Raw Cotton to Premium Export Yarn
           </h1>
@@ -108,13 +108,13 @@ export default function HomePage() {
           <div className="flex flex-wrap gap-4">
             <button
               onClick={() => navigate('/quality')}
-              className="bg-secondary text-white px-8 py-4 rounded-lg font-label-sm text-label-sm hover:brightness-110 transition-all flex items-center gap-2"
+              className="ripple-btn btn-fill btn-fill-primary border-2 border-white px-8 py-4 rounded-lg font-label-sm text-label-sm flex items-center gap-2"
             >
               EXPLORE TECHNOLOGY <span className="material-symbols-outlined text-sm">arrow_forward</span>
             </button>
             <button
               onClick={() => navigate('/about')}
-              className="border-2 border-white/30 backdrop-blur-sm px-8 py-4 rounded-lg font-label-sm text-label-sm hover:bg-white/10 transition-all"
+              className="ripple-btn btn-fill btn-fill-outline-white border-2 border-white px-8 py-4 rounded-lg font-label-sm text-label-sm"
             >
               OUR FOOTPRINT
             </button>
@@ -148,7 +148,7 @@ export default function HomePage() {
                     <span className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">{step.num}</span>
                     <h3 className="font-headline-md text-headline-md text-primary">{step.title}</h3>
                   </div>
-                  <h4 className="font-body-lg font-semibold text-secondary mb-4 ml-13">{step.sub}</h4>
+                  <h4 className="font-body-lg font-semibold text-on-surface-variant mb-4 ml-13">{step.sub}</h4>
                   <div className="space-y-3 text-on-surface-variant">
                     {step.bullets.map((b, i) => (
                       <p key={i} className="flex items-start gap-2">
@@ -178,11 +178,11 @@ export default function HomePage() {
                 <h3 className="font-headline-md text-headline-md mb-2 text-primary">Global Reliability</h3>
                 <p className="text-on-surface-variant">Consistent delivery of export-quality yarn to textile hubs across five continents, meeting stringent international standards.</p>
               </div>
-              <div className="flex items-center gap-2 text-secondary font-bold text-sm cursor-pointer" onClick={() => navigate('/about')}>
+              <button className="ripple-btn flex items-center gap-2 text-primary font-bold text-sm bg-transparent border-0 cursor-pointer px-0 py-0" onClick={() => navigate('/about')}>
                 LEARN MORE <span className="material-symbols-outlined">trending_flat</span>
-              </div>
+              </button>
             </div>
-            <div className="md:col-span-4 bg-primary-container p-8 border border-outline-variant rounded-lg flex flex-col justify-center text-white relative overflow-hidden group" ref={reveal}>
+            <div className="md:col-span-4 bg-primary p-8 border border-outline-variant rounded-lg flex flex-col justify-center text-white relative overflow-hidden group" ref={reveal}>
               <div className="absolute -right-10 -bottom-10 opacity-10 group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-[200px]" style={{ fontVariationSettings: "'FILL' 1" }}>precision_manufacturing</span>
               </div>

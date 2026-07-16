@@ -67,7 +67,7 @@ export default function ContactPage() {
   return (
     <main>
       {/* Hero */}
-      <section className="bg-primary-container pt-36 pb-28 px-4 md:px-margin-desktop relative overflow-hidden">
+      <section className="bg-primary pt-36 pb-28 px-4 md:px-margin-desktop relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div className="absolute top-12 right-12 w-80 h-80 rounded-full border-[6px] border-white/5"></div>
           <div className="absolute -bottom-24 -left-16 w-56 h-56 rounded-full border-4 border-white/5"></div>
@@ -79,7 +79,7 @@ export default function ContactPage() {
             Contact Us
           </span>
           <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-white max-w-3xl mb-6 leading-tight">
-            Let's Build Something <span className="text-secondary-fixed">Together.</span>
+            Let's Build Something <span className="text-white/60">Together.</span>
           </h1>
           <p className="font-body-lg text-body-lg text-white/70 max-w-2xl">
             Whether you need a custom yarn specification or want to explore a long-term supply partnership — our technical team is ready to respond within 24 hours.
@@ -91,7 +91,7 @@ export default function ContactPage() {
               { icon: 'speed', text: '24-Hour Response' },
             ].map(({ icon, text }) => (
               <div key={text} className="flex items-center gap-2 text-white/70">
-                <span className="material-symbols-outlined text-secondary-fixed text-[18px]">{icon}</span>
+                <span className="material-symbols-outlined text-white/60 text-[18px]">{icon}</span>
                 <span className="font-label-sm text-label-sm">{text}</span>
               </div>
             ))}
@@ -134,7 +134,7 @@ export default function ContactPage() {
             {/* Social */}
             <div
               ref={reveal}
-              className="bg-primary-container rounded-xl p-6 mt-2 opacity-0 translate-y-8 duration-700"
+              className="bg-primary rounded-xl p-6 mt-2 opacity-0 translate-y-8 duration-700"
               style={{ transitionDelay: '320ms' }}
             >
               <span className="font-label-sm text-label-sm text-white/60 uppercase tracking-widest block mb-4">Connect With Us</span>
@@ -234,7 +234,7 @@ export default function ContactPage() {
                 <div className="md:col-span-2 flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-2">
                   <button
                     type="submit"
-                    className="bg-primary text-on-primary px-12 py-4 rounded-lg font-label-sm text-label-sm hover:bg-primary-container transition-all flex items-center gap-2 group uppercase tracking-widest"
+                    className="ripple-btn btn-fill btn-fill-white px-12 py-4 rounded-lg font-label-sm text-label-sm flex items-center gap-2 group uppercase tracking-widest border border-primary"
                   >
                     Send Message
                     <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">send</span>

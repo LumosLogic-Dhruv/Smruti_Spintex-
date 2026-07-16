@@ -20,10 +20,10 @@ function useReveal() {
 }
 
 const pillars = [
-  { icon: 'public', title: 'Global Reliability', desc: 'Trusted export-quality yarn standards.', bg: 'bg-secondary-container', color: 'text-on-secondary-container' },
-  { icon: 'precision_manufacturing', title: 'Latest Technology', desc: 'Powered by world-class machinery.', bg: 'bg-tertiary-fixed', color: 'text-on-tertiary-fixed' },
-  { icon: 'verified', title: 'Quality Manufacturing', desc: '100% online defect-monitoring systems.', bg: 'bg-primary-container', color: 'text-on-primary-container' },
-  { icon: 'groups', title: 'Experienced Team', desc: 'Backed by textile industry veterans.', bg: 'bg-surface-container-high', color: 'text-primary' },
+  { icon: 'public', title: 'Global Reliability', desc: 'Trusted export-quality yarn standards.', bg: 'bg-primary/10', color: 'text-primary' },
+  { icon: 'precision_manufacturing', title: 'Latest Technology', desc: 'Powered by world-class machinery.', bg: 'bg-primary/10', color: 'text-primary' },
+  { icon: 'verified', title: 'Quality Manufacturing', desc: '100% online defect-monitoring systems.', bg: 'bg-primary/10', color: 'text-primary' },
+  { icon: 'groups', title: 'Experienced Team', desc: 'Backed by textile industry veterans.', bg: 'bg-primary/10', color: 'text-primary' },
 ];
 
 const timeline = [
@@ -51,8 +51,8 @@ export default function AboutPage() {
               Smruti Spintex Pvt. Ltd. is a next-generation cotton spinning enterprise located in Dhrangadhra, the heart of Gujarat's premium cotton belt. We integrate advanced level machinery with rigorous process control and a deeply experienced management team. Our mission is to manufacture consistent, export-grade cotton yarn tailored for the global weaving, knitting, and specialty textile industries.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button onClick={() => navigate('/contact')} className="bg-primary text-on-primary px-8 py-3 rounded-lg font-label-sm text-label-sm hover:shadow-lg transition-all">Get in Touch</button>
-              <button onClick={() => navigate('/quality')} className="border-2 border-secondary text-secondary px-8 py-3 rounded-lg font-label-sm text-label-sm hover:bg-secondary/5 transition-all">View Quality</button>
+              <button onClick={() => navigate('/contact')} className="ripple-btn btn-fill btn-fill-white px-8 py-3 rounded-lg font-label-sm text-label-sm border border-primary">Get in Touch</button>
+              <button onClick={() => navigate('/quality')} className="ripple-btn btn-fill btn-fill-outline-primary border-2 border-primary px-8 py-3 rounded-lg font-label-sm text-label-sm">View Quality</button>
             </div>
           </div>
           <div className="relative" ref={reveal}>
@@ -119,7 +119,7 @@ export default function AboutPage() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-24 px-4 md:px-margin-desktop bg-surface-container-highest">
+      <section className="py-24 px-4 md:px-margin-desktop bg-white">
         <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="bg-white p-8 md:p-12 rounded-2xl border border-outline-variant card-ambient-shadow relative overflow-hidden group" ref={reveal}>
             <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
@@ -140,7 +140,7 @@ export default function AboutPage() {
               <span className="material-symbols-outlined text-[120px] text-primary">rocket_launch</span>
             </div>
             <div className="relative z-10">
-              <div className="w-16 h-16 bg-secondary-container/20 rounded-xl flex items-center justify-center mb-8">
+              <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-8">
                 <span className="material-symbols-outlined text-secondary text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>rocket_launch</span>
               </div>
               <h2 className="font-headline-lg text-headline-lg text-primary mb-6">Our Mission</h2>

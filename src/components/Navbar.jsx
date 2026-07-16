@@ -56,7 +56,7 @@ export default function Navbar() {
         {/* CTA */}
         <button
           onClick={() => navigate('/contact')}
-          className="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-lg font-label-sm text-label-sm hover:bg-primary-container transition-all uppercase tracking-widest"
+          className="ripple-btn btn-fill btn-fill-white hidden md:block px-6 py-2 rounded-lg font-label-sm text-label-sm uppercase tracking-widest border border-primary"
         >
           Get a Quote
         </button>
@@ -92,7 +92,7 @@ export default function Navbar() {
             ))}
             <button
               onClick={() => { setMenuOpen(false); navigate('/contact'); }}
-              className="mt-2 bg-primary text-on-primary py-3 rounded-lg font-label-sm text-label-sm uppercase tracking-widest"
+              className="ripple-btn btn-fill btn-fill-white mt-2 py-3 rounded-lg font-label-sm text-label-sm uppercase tracking-widest border border-primary"
             >
               Get a Quote
             </button>
