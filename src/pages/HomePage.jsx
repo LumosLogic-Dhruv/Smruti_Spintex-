@@ -99,7 +99,7 @@ export default function HomePage() {
         </div>
         <div className="relative z-10 px-4 md:px-margin-desktop py-24 md:py-0 md:h-full flex flex-col justify-center max-w-container-max mx-auto text-on-primary">
           <span className="font-label-sm text-label-sm uppercase tracking-[0.3em] mb-4 text-secondary-fixed">Global Engineering Standards</span>
-          <h1 className="text-3xl md:text-display-lg font-bold max-w-3xl mb-6 leading-tight">
+          <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg max-w-3xl mb-6 leading-tight">
             Advanced Textile Manufacturing: From Raw Cotton to Premium Export Yarn
           </h1>
           <p className="font-body-lg text-body-lg max-w-xl mb-8 text-surface-variant opacity-90">
@@ -234,7 +234,7 @@ export default function HomePage() {
                     </div>
                     <h2 className="font-headline-lg text-headline-lg text-white">Our Vision</h2>
                   </div>
-                  <p className="text-white/80 leading-relaxed">
+                  <p className="font-body-md text-body-md text-white/80 leading-relaxed">
                     To be the global benchmark for spinning excellence, integrating innovative technology with sustainable practices to empower the textile fashion industry worldwide.
                   </p>
                 </div>
@@ -246,7 +246,7 @@ export default function HomePage() {
                     </div>
                     <h2 className="font-headline-lg text-headline-lg text-white">Our Mission</h2>
                   </div>
-                  <p className="text-white/80 leading-relaxed">
+                  <p className="font-body-md text-body-md text-white/80 leading-relaxed">
                     Delivering superior quality yarn products through relentless focus on R&D, operational efficiency, and creating long-term value for our global stakeholders and local communities.
                   </p>
                 </div>
@@ -267,20 +267,20 @@ export default function HomePage() {
               </p>
               <div className="grid grid-cols-2 gap-8">
                 <div>
-                  <span className="text-4xl font-bold text-secondary block">16,416</span>
-                  <span className="text-sm text-on-surface-variant">Active Spindles</span>
+                  <span className="font-display-lg text-headline-lg md:text-display-lg text-secondary block">16,416</span>
+                  <span className="font-label-sm text-label-sm text-on-surface-variant">Active Spindles</span>
                 </div>
                 <div>
-                  <span className="text-4xl font-bold text-secondary block">5,150+</span>
-                  <span className="text-sm text-on-surface-variant">MT / Year</span>
+                  <span className="font-display-lg text-headline-lg md:text-display-lg text-secondary block">5,150+</span>
+                  <span className="font-label-sm text-label-sm text-on-surface-variant">MT / Year</span>
                 </div>
                 <div>
-                  <span className="text-4xl font-bold text-secondary block">2021</span>
-                  <span className="text-sm text-on-surface-variant">Incorporated</span>
+                  <span className="font-display-lg text-headline-lg md:text-display-lg text-secondary block">2021</span>
+                  <span className="font-label-sm text-label-sm text-on-surface-variant">Incorporated</span>
                 </div>
                 <div>
-                  <span className="text-4xl font-bold text-secondary block">100%</span>
-                  <span className="text-sm text-on-surface-variant">Online QC</span>
+                  <span className="font-display-lg text-headline-lg md:text-display-lg text-secondary block">100%</span>
+                  <span className="font-label-sm text-label-sm text-on-surface-variant">Online QC</span>
                 </div>
               </div>
             </div>

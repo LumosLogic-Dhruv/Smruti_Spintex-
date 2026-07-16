@@ -43,7 +43,7 @@ export default function Footer() {
               { label: 'Our Story', to: '/our-story' },
             ].map(({ label, to }) => (
               <li key={to}>
-                <Link to={to} className="hover:text-white transition-colors">{label}</Link>
+                <Link to={to} className="underline hover:text-white transition-colors">{label}</Link>
               </li>
             ))}
           </ul>

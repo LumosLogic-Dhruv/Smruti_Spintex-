@@ -108,8 +108,8 @@ export default function AboutPage() {
                   <div className={`w-16 h-16 ${t.active ? 'bg-primary border-primary' : 'bg-white border-secondary'} border-4 rounded-full flex items-center justify-center mb-6 shadow-lg z-20`}>
                     <span className={`material-symbols-outlined ${t.active ? 'text-white' : 'text-secondary'}`}>{t.icon}</span>
                   </div>
-                  <div className="font-headline-md text-headline-md text-primary mb-2">{t.label}</div>
-                  <h4 className="font-label-sm text-label-sm text-secondary uppercase mb-3">{t.title}</h4>
+                  <div className="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-2">{t.label}</div>
+                  <h4 className="font-headline-md text-headline-md text-primary mb-3">{t.title}</h4>
                   <p className="text-on-surface-variant px-4">{t.desc}</p>
                 </div>
               ))}

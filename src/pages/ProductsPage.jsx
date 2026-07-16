@@ -98,7 +98,7 @@ export default function ProductsPage() {
                 </div>
                 <div className="w-full md:w-3/5">
                   <span className={`inline-block px-3 py-1 rounded font-label-sm text-label-sm mb-4 ${p.tagColor}`}>{p.tag}</span>
-                  <h3 className="font-headline-lg text-headline-lg text-primary mb-4">{p.title}</h3>
+                  <h3 className="font-headline-md text-headline-md text-primary mb-4">{p.title}</h3>
                   <p className="text-on-surface-variant mb-8 font-body-md text-body-md">{p.desc}</p>
                   <div className="grid grid-cols-2 gap-4 border-t border-outline-variant pt-6">
                     {[
@@ -130,8 +130,8 @@ export default function ProductsPage() {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-6">
-            <button onClick={() => navigate('/contact')} className="bg-white text-primary px-10 py-4 rounded-lg font-headline-md text-headline-md hover:bg-surface-container transition-all">Get a Quote</button>
-            <button onClick={() => navigate('/quality')} className="border-2 border-white text-white px-10 py-4 rounded-lg font-headline-md text-headline-md hover:bg-white/10 transition-all">View Quality</button>
+            <button onClick={() => navigate('/contact')} className="bg-white text-primary px-10 py-4 rounded-lg font-label-sm text-label-sm hover:bg-surface-container transition-all">Get a Quote</button>
+            <button onClick={() => navigate('/quality')} className="border-2 border-white text-white px-10 py-4 rounded-lg font-label-sm text-label-sm hover:bg-white/10 transition-all">View Quality</button>
           </div>
         </div>
       </section>

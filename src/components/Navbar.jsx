@@ -5,7 +5,7 @@ const navLinks = [
   { label: 'Home', to: '/' },
   { label: 'About Us', to: '/about' },
   { label: 'Products', to: '/products' },
-  { label: 'Quality', to: '/quality' },
+  { label: 'Quality Assurance', to: '/quality' },
   { label: 'Our Story', to: '/our-story' },
   { label: 'Contact', to: '/contact' },
 ];

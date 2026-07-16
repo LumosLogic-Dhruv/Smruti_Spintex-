@@ -89,7 +89,7 @@ export default function QualityPage() {
                 <div className="bg-white p-5 md:p-8 rounded-xl card-ambient-shadow border border-outline-variant flex-grow">
                   <div className="flex justify-between items-start mb-4 flex-wrap gap-2">
                     <h4 className="font-headline-md text-headline-md text-primary">{step.num}. {step.title}</h4>
-                    <span className="text-secondary font-bold text-sm">{step.metric}</span>
+                    <span className="text-secondary font-label-sm text-label-sm">{step.metric}</span>
                   </div>
                   <p className="font-body-md text-body-md text-on-surface-variant">{step.desc}</p>
                 </div>
@@ -133,8 +133,8 @@ export default function QualityPage() {
             <p className="font-body-lg text-body-lg opacity-80">Experience the difference of industrial precision. Connect with our quality team for detailed technical reports or customized spinning requests.</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-6">
-            <button onClick={() => navigate('/contact')} className="bg-white text-primary px-10 py-4 rounded-lg font-headline-md text-headline-md hover:bg-surface-container transition-all">Get a Quote</button>
-            <button onClick={() => navigate('/products')} className="border-2 border-white text-white px-10 py-4 rounded-lg font-headline-md text-headline-md hover:bg-white/10 transition-all">Our Products</button>
+            <button onClick={() => navigate('/contact')} className="bg-white text-primary px-10 py-4 rounded-lg font-label-sm text-label-sm hover:bg-surface-container transition-all">Get a Quote</button>
+            <button onClick={() => navigate('/products')} className="border-2 border-white text-white px-10 py-4 rounded-lg font-label-sm text-label-sm hover:bg-white/10 transition-all">Our Products</button>
           </div>
         </div>
       </section>

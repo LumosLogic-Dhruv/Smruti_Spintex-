@@ -153,8 +153,8 @@ export default function OurStoryPage() {
               <h2 className="font-display-lg text-headline-lg-mobile md:text-display-lg">Ready to weave growth stories together?</h2>
               <p className="font-body-lg text-body-lg opacity-80 max-w-2xl mx-auto">Join the ranks of global brands who trust Smruti Spintex for their premium yarn requirements.</p>
               <div className="flex flex-wrap justify-center gap-4">
-                <button onClick={() => navigate('/contact')} className="bg-white text-primary px-8 py-4 rounded font-bold hover:bg-surface-container transition-colors">Get a Technical Quote</button>
-                <button onClick={() => navigate('/about')} className="border-2 border-white text-white px-8 py-4 rounded font-bold hover:bg-white/10 transition-colors">Learn About Us</button>
+                <button onClick={() => navigate('/contact')} className="bg-white text-primary px-8 py-4 rounded font-label-sm text-label-sm hover:bg-surface-container transition-colors">Get a Technical Quote</button>
+                <button onClick={() => navigate('/about')} className="border-2 border-white text-white px-8 py-4 rounded font-label-sm text-label-sm hover:bg-white/10 transition-colors">Learn About Us</button>
               </div>
             </div>
           </div>
